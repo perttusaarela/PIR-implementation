@@ -1,16 +1,18 @@
 from typing import List
 import asyncio
 
-from sage import GF, vector, matrix, VectorSpace, codes, LCM
+from sage.all import vector, matrix, codes, VectorSpace, LCM, FiniteField
+
+
 from sage.misc.persist import dumps, loads
 import aiohttp
 
-from utils import evaluate, polyencode
+from utils import evaluate, polyencode, get_urls
 
 setup_complete = False
 store_complete = False
 
-F = GF(256)
+F = FiniteField(256)
 
 
 def setup(

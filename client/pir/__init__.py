@@ -1,1 +1,1 @@
-from rs_pir import *
+from .rs_pir import *

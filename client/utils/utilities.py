@@ -1,8 +1,6 @@
 # Generally usefull functions
 
-import random
-
-from sage import matrix, vector
+from sage.all import matrix, vector
 
 # Returns an invertible submatrix of A and the correspoding
 # incidence vector.
